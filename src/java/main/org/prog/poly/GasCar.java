@@ -39,9 +39,9 @@ public class GasCar implements IMovable {
         goTo(city, destination, passingThrough, 0);
     }
 
-    public void goTo(String city, String destination, String passingThrough, int passengers) {
+    public void goTo(String city, String destination, String passingThrough, int passengers, double fuelPayment) {
         System.out.println("Car is going from " + city + " to " + destination +
-                " passing through " + passingThrough + " with " + passengers + " passengers on board");
+                " passing through " + passingThrough + " with " + passengers + " passengers on board", "Fuel payment is UAH" + fuelPayment);
     }
 
     //TODO: add one more overload, add split fuel payment
