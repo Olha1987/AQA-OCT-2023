@@ -7,7 +7,38 @@ import java.io.FileReader;
 public class ExceptionsDemo {
 
     //TODO: write catch for null pointer exception
+
+    public static void main(String[] args) {
+
+        try {
+            equalsA(null);
+        } catch (NullPointerException e) {
+            System.out.println("Caught Null Pointer Exception!");
+        }
+    }
+
+    public static void equalsA(String value) {
+        System.out.println("a".equals(value));
+    }
+
     //TODO: write method that will cause NPE
+        public static void main(String[] args) {
+
+
+            try {
+
+                causeNPE();
+            } catch (NullPointerException e) {
+                System.out.println("Caught Null Pointer Exception!");
+            }
+        }
+
+        public static void causeNPE() {
+            String s = null;
+            s.length();
+        }
+    }
+
 
     public static void main(String[] args) {
 
