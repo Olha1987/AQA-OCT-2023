@@ -6,8 +6,39 @@ import java.io.FileReader;
 
 public class ExceptionsDemo {
 
+    public static void main(String[] args) {
+
+        try {
+            equalsA(null);
+        } catch (NullPointerException e) {
+            System.out.println("Caught Null Pointer Exception!");
+        }
+    }
+
+    public static void equalsA(String value) {
+        System.out.println("a".equals(value));
+    }
+
+
     //TODO: write catch for null pointer exception
     //TODO: write method that will cause NPE
+    public class ExceptionsDemo {
+        public static void main(String[] args) {
+            // ... другой код ...
+
+            try {
+                // Вызываем метод, который вызовет NPE
+                causeNPE();
+            } catch (NullPointerException e) {
+                System.out.println("Caught Null Pointer Exception!");
+            }
+        }
+
+        public static void causeNPE() {
+            String s = null;
+            s.length(); // Это вызовет Null Pointer Exception
+        }
+    }
 
     public static void main(String[] args) {
 
