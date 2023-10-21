@@ -16,7 +16,7 @@ public class PolyDemo {
 //        followTheRoute(gasTruck);
 //        followTheRoute(hugeTruck);
 
-        gasCar.goTo("Kyiv", "Odessa");
+        gasCar.goTo("Kyiv", "Odessa", "Ivano-Frankivs'k", 5);
         gasCar.goTo("Kharkiv", "Uman", "Kyiv");
         gasTruck.goTo("Lviv", "Odessa", "Ivano-Frankivs'k", 5);
     }
